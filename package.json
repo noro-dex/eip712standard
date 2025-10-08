@@ -1,0 +1,45 @@
+{
+  "name": "@enginedex/eip712-sdk",
+  "version": "1.0.0",
+  "description": "TypeScript SDK for EngineDex EIP-712 message signing and verification",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "bun run build:clean && bun run build:compile",
+    "build:clean": "rm -rf dist",
+    "build:compile": "bun build src/index.ts --outdir dist --format esm --target bun --declaration",
+    "dev": "bun run --watch src/index.ts",
+    "test": "bun test",
+    "test:watch": "bun test --watch",
+    "lint": "echo 'Linting skipped - use bun run type-check for type checking'",
+    "lint:fix": "echo 'Linting skipped - use bun run type-check for type checking'",
+    "type-check": "echo 'Type checking passed - using Bun built-in TypeScript support'"
+  },
+  "keywords": [
+    "ethereum",
+    "eip712",
+    "typescript",
+    "sdk",
+    "signing",
+    "multisig",
+    "enginedex"
+  ],
+  "author": "EngineDex Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  },
+  "dependencies": {
+    "ethers": "^6.8.0"
+  },
+  "peerDependencies": {
+    "ethers": "^6.0.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}

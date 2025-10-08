@@ -1,0 +1,16 @@
+[install]
+# Use npm registry for dependencies
+registry = "https://registry.npmjs.org/"
+
+# Cache configuration
+cache = true
+cache-dir = ".bun/cache"
+
+[test]
+# Test configuration
+
+[build]
+# Build configuration
+target = "bun"
+minify = false
+sourcemap = true

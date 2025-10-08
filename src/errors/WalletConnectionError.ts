@@ -1,0 +1,1 @@
+export { WalletConnectionError } from './EngineDexError';
