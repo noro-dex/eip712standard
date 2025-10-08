@@ -33,3 +33,6 @@ export * from './errors/EngineDexError';
 export * from './errors/InvalidNonceError';
 export * from './errors/SignatureThresholdError';
 export * from './errors/WalletConnectionError';
+
+// Wagmi wallet extensions
+export * from './walletexten';
